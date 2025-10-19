@@ -3,9 +3,7 @@ import fetch from "node-fetch"; // Node.js で fetch を使うために必要
 
 
 const fetchAllUsers = async () => {
-
   const url = `${process.env.NEXT_PUBLIC_SUPABASE_URL}/rest/v1/userTable`;//urlの後にrest/v1の後に条件をつける
-
   console.log("リクエストURL:", url); // **ここでURLが正しいか確認**
 
   const response = await fetch(url, {
